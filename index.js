@@ -1,6 +1,5 @@
 const express = require('express');
 
-
 const app= express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
@@ -15,13 +14,7 @@ app.use(express.urlencoded({
 
 
 app.get('/',function(req,res){
-    // data= {
-    //     title: "GET Request Received",
-    //     data:{
-    //         name='max',
-    //         age=20
-    //     }
-    // }
+
 
     let data= {
         title: "GET Request Received",
@@ -33,11 +26,6 @@ app.get('/',function(req,res){
 app.post("/", function(req, res){
     console.log(req.query);
     console.log(req.body);
-    //   let data= {
-    //     title: "POST Request Received",
-    //     data:{ name: 'max', age: '20' },
-    //     body:{ data1: 'val1' }
-    // }
 
     let data= {
         title: "POST Request Received",
