@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+
+<table>
+    <tr>
+        <th>Param Name</th>
+        <th>Value</th>
+    </tr>
+    {{#each data}}
+    <tr>
+        <td>{{@key}}</td>
+        <td>{{this}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<table>
+    <tr>
+        <th>Data Name</th>
+        <th>Value</th>
+    </tr>
+    {{#each body}}
+    <tr>
+        <td>{{@key}}</td>
+        <td>{{this}}</td>
+    </tr>
+    {{/each}}
+</table>

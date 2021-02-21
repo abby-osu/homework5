@@ -1,0 +1,24 @@
+{{!-- {
+title: "GET Request Received",
+data:{
+name:'max',
+age:20,
+hobby: hockey
+}
+} --}}
+
+
+<h1>{{title}}</h1>
+<table>
+    <tr>
+        <th>Param Name</th>
+        <th>Value</th>
+    </tr>
+    {{!-- this= 20 key= age --}}
+    {{#each data}}
+    <tr>
+        <td>{{@key}}</td>
+        <td>{{this}}</td>
+    </tr>
+    {{/each}}
+</table>
